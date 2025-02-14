@@ -1,0 +1,138 @@
+.contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: transparent;
+    margin-bottom: 12rem;
+  }
+  
+  .contact-heading {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .contact-intro {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+    animation-delay: 0.2s;
+  }
+  
+  .contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .contact-card.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .contact-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-card a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .contact-icon {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-svg {
+    width: 40px;
+    height: 40px;
+    transition: fill 0.3s ease, stroke 0.3s ease;
+  }
+  
+  .email-svg {
+    fill: none;
+    stroke: #333;
+    stroke-width: 2;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+  }
+  
+  .linkedin-svg {
+    fill: #0077B5;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+  }
+  
+  .github-svg {
+    fill: #333;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+  }
+  
+  .contact-card:hover .email-svg {
+    stroke: #007bff;
+  }
+  
+  .contact-card:hover .linkedin-svg {
+    fill: #005582;
+  }
+  
+  .contact-card:hover .github-svg {
+    fill: #007bff;
+  }
+  
+  .contact-details h2 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .contact-details p {
+    margin: 0.5rem 0 0;
+    font-size: 1rem;
+    word-break: break-all;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-section {
+      padding: 3rem 1rem;
+    }
+    .contact-heading {
+      font-size: 2rem;
+    }
+    .contact-intro {
+      font-size: 1rem;
+    }
+  }
+  

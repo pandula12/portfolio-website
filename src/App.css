@@ -1,0 +1,32 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  color: #000;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(-45deg, #fff1eb, #ffd7d5, #ace0f9, #c1dfc4);
+  background-size: 250% 250%;
+  animation: backgroundAnimation 10s ease infinite;
+  color: #000;
+}
+
+.App {
+  padding-top: 80px;
+  width: 100%;
+}
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
