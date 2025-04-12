@@ -6,6 +6,8 @@ import skyCeramicsLogo from '../assets/skyceramics-logo.jpg';
 import skyCeramicsScreenshot from '../assets/skyceramics-screenshot.png';
 import microservicesIcon from '../assets/microservices-icon.png';
 import dockerKubernetes from '../assets/docker-kubernetes.jpg';
+import weatherIcon from '../assets/weather-icon.png';
+import weatherSs from '../assets/weather-ss.png';
 
 const projectsData = [
   {
@@ -31,6 +33,14 @@ const projectsData = [
     additionalImage: dockerKubernetes,
     description: "Created a microservices architecture demo using Flask to showcase modern DevOps practices. The project features a gateway alongside multiple independent and dependent services, all containerized with Docker and deployed via Kubernetes. This demonstration highlights the scalability and maintainability benefits of microservices.",
     links: { github: "https://github.com/pandula12/microservices" }
+  },
+  {
+    id: 4,
+    title: "Weather Visualizer",
+    coverImage: weatherIcon,
+    additionalImage: weatherSs,
+    description: "Built a responsive weather visualizer using Next.js, designed to display real-time weather data enhanced with dynamic visual effects and animations. This application integrates the OpenWeatherMap API, utilizing user location to provide accurate, localized forecasts. A key feature is the mock scenario selector, allowing users to explore different weather conditions and their corresponding visual representations. The project is deployed seamlessly on Vercel, leveraging GitHub integration for continuous integration and delivery (CI/CD).",
+    links: { github: "https://github.com/pandula12/weather-visualizer" }
   }
 ];
 
