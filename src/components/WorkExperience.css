@@ -1,6 +1,8 @@
 .work-section {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  gap: 5rem;
   align-items: center;
   justify-content: center;
   padding: 2rem;
@@ -24,10 +26,20 @@
   transform: translateY(0);
 }
 
+.work-logo {
+  flex: 0 0 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .work-logo img {
-  max-width: 250px;
   width: 100%;
-  height: auto;
+  /* Increased max-width slightly to let the wide logo breathe */
+  max-width: 240px; 
+  /* Increased max-height significantly (120px -> 160px) so the square logo grows */
+  max-height: 160px; 
+  object-fit: contain;
   filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
 }
 
@@ -36,6 +48,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  text-align: left;
 }
 
 .work-position {
@@ -61,16 +74,26 @@
     text-align: center;
     align-items: center;
   }
-  .work-logo img {
-    max-width: 200px;
+  
+  .work-logo {
+    flex: 0 0 auto;
+    margin-bottom: 1rem;
   }
+
+  .work-logo img {
+    max-width: 180px;
+    max-height: 140px; /* Adjusted for mobile as well */
+  }
+
   .work-position {
     font-size: 2rem;
   }
+
   .work-duration,
   .work-location {
     font-size: 1.2rem;
   }
+  
   .work-summary {
     font-size: 1rem;
   }
