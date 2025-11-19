@@ -17,7 +17,7 @@ const workData = [
     id: 2,
     company: "iOneSoft Solutions",
     logo: ionesoftLogo,
-    position: "Software Engineering Trainee",
+    position: "Software Engineer Trainee",
     duration: "Nov 2023 - Feb 2024",
     location: "Colombo, Sri Lanka",
     summary: "I built a full-stack HR Management System using ASP.NET, Angular, Microsoft SQL Server, and Microsoft Azure. I crafted a high-performance database, set up secure, role-based authentication with an email recovery system, and designed an intuitive interface for managing employee records and leave requests. By automating key workflows and notifications, I helped streamline HR operations and boost overall efficiency."
