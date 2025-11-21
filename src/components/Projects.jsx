@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Projects.css';
 import maptekLogo from '../assets/maptek-logo.png';
 import maptekTablet from '../assets/maptek-tablet.jpg';
-import skyCeramicsLogo from '../assets/skyceramics-logo.jpg';
+import skyCeramicsLogo from '../assets/sky-ceramics-logo.jpg';
 import skyCeramicsScreenshot from '../assets/skyceramics-screenshot.png';
 import microservicesIcon from '../assets/microservices-icon.png';
 import dockerKubernetes from '../assets/docker-kubernetes.jpg';
